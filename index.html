@@ -6,6 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>Todo List</title>
         <link rel="stylesheet" href="main.css"/>
+        <script src="main.js" defer></script>
+        <!-- "defer" allows the script to be loaded LAST instead of during the head first-->
     </head>
 
     <body>
@@ -17,6 +19,8 @@
                     class="input-field" 
                     id="todoInput" 
                     placeholder="Add a new task"/>
+                    <button class="btn">Add</button>
+
             </div>
             <ul class="scroll">
                 <li id="todoList">
@@ -26,18 +30,16 @@
             <div>
                 <hr class="counter"/>
                 <div class="counter-container">
-                    <p><span>0</span> items total</p>
+                    <p><span id="todoCount">0</span> items total</p>
                     <button id="deleteButton">Delete All</button>
                 </div>
             </div>
-            <button class="btn">Add</button>
         </section>
         <footer>
             <div class="footer">
                 <p class="made-by">Made by </p>
-                <p class="author">KP</p>
+                <p class="author"><a href='http://kylemperkins.com' target="_blank">KP</a></p>
             </div>
         </footer>
     </body>
-    <script src="main.js"></script>
 </html>
